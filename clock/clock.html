@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylsheet" href="style.css" />
+    <!-- inspired by https://www.youtube.com/watch?v=gApwC9Ek9yo&t=57s -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- <script src="clock.jsx"></script> -->
+</head>
+
+<body>
+    <h1>JavaScript Clock</h1>
+    <div id="jsClock"></div>
+
+    <h1>React Clock</h1>
+    <div id="reactClock"></div>
+
+    <script type="text/babel">
+        const jsClockEl = document.getElementById("jsClock");
+        const tick = () => {
+            const time = new Date().toLocaleTimeString();
+            const clockTemplate = 
+            `<div>
+            <span>${time}</span>
+            </div>`;
+        
+            jsClockEl.innerHTML = clockTemplate;
+        };
+        //tick();  
+        setInterval(tick, 1000);
+        
+        const reactClockEl = document.getElementById("reactClock");
+        const tickReact = () => {
+            const time = new Date().toLocaleTimeString();
+            const reactClockTemplate = (<div><span>{time}</span></div>);
+            ReactDOM.render(reactClockTemplate, reactClockEl);
+        };
+        // tickReact();
+        setInterval(tickReact, 1000);
+    </script>
+</body>
