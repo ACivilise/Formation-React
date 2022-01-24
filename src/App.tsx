@@ -2,9 +2,9 @@ import "./App.css";
 import ComponentWithProps from "./components/1.componentWithProps";
 import ComponentWithCondition from "./components/2.componentWithCondition";
 import ComponentWithMap from "./components/3.componentWithMap";
-import ComponentWithState from "./components/4.componentWithState";
-import ComponentWithUseEffect from "./components/5.componentWithUseEffect";
-import ComponentWithUseMemo from "./components/6.componentWithUseMemo";
+import ComponentWithState from "./hooks/4.componentWithState";
+import ComponentWithUseEffect from "./hooks/5.componentWithUseEffect";
+import ComponentWithUseMemo from "./hooks/6.componentWithUseMemo";
 
 const App1 = () => {
   return <ComponentWithProps title="titre1" />;

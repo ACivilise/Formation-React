@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import ComponentWithCondition from "../2.componentWithCondition";
+import ComponentWithCondition from "components/2.componentWithCondition";
 
 const ComponentWithMap = () => {
   const titles = [

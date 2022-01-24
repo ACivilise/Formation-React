@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-    <!-- <script src="clock.jsx"></script> -->
+    <script src="destructuring.js" type="text/JavaScript"></script>
 </head>
 
 <body>
@@ -21,16 +21,16 @@
         const jsClockEl = document.getElementById("jsClock");
         const tick = () => {
             const time = new Date().toLocaleTimeString();
-            const clockTemplate = 
-            `<div>
+            const clockTemplate =
+                `<div>
             <span>${time}</span>
             </div>`;
-        
+
             jsClockEl.innerHTML = clockTemplate;
         };
         //tick();  
         setInterval(tick, 1000);
-        
+
         const reactClockEl = document.getElementById("reactClock");
         const tickReact = () => {
             const time = new Date().toLocaleTimeString();
@@ -40,4 +40,5 @@
         // tickReact();
         setInterval(tickReact, 1000);
     </script>
+
 </body>

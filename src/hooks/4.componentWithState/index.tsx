@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, Button } from "@mui/material";
-import ComponentWithCondition from "../2.componentWithCondition";
+import ComponentWithCondition from "components/2.componentWithCondition";
 
 const ComponentWithState = () => {
   const [isBig, setIsBig] = useState(false);
