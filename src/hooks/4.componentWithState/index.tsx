@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import { Box, Button } from "@mui/material";
 import ComponentWithCondition from "components/2.componentWithCondition";
 
 const ComponentWithState = () => {
-  const [isBig, setIsBig] = useState(false);
+  const [isTitle, setIsTitle] = useState(false);
   return (
-    <Box>
-      <Button onClick={() => setIsBig(!isBig)}>
+    <div>
+      <button onClick={() => setIsTitle((prev) => !prev)}>
         modifier la taille du titre
-      </Button>
-      <ComponentWithCondition title="ComponentWithState" big={isBig} />
-    </Box>
+      </button>
+      <ComponentWithCondition text="ComponentWithState" isTitle={isTitle} />
+    </div>
   );
 };
 

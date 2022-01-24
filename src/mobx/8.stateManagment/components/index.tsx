@@ -1,5 +1,4 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
 import ObserverComponent from "./observerComponent";
 import UpdaterComponent from "./updaterComponent";
 import { createStore, StoreProvider } from "../stores";
@@ -8,13 +7,13 @@ const ComponentWithMobx = () => {
   const rootStore = createStore();
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Typography>Composant fournissant le store</Typography>
+    <div style={{ width: "100%" }}>
+      <h1>Composant fournissant le store</h1>
       <StoreProvider value={rootStore}>
         <ObserverComponent />
         <UpdaterComponent />
       </StoreProvider>
-    </Box>
+    </div>
   );
 };
 

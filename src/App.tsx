@@ -9,11 +9,11 @@ import ComponentWithUseEffect from "hooks/5.componentWithUseEffect";
 import ComponentWithUseMemo from "hooks/6.componentWithUseMemo";
 
 const App1 = () => {
-  return <ComponentWithProps title="titre1" />;
+  return <ComponentWithProps text="titre1" />;
 };
 
 const App2 = () => {
-  return <ComponentWithCondition title="titre1" big={true} />;
+  return <ComponentWithCondition text="titre1" isTitle={true} />;
 };
 
 const App3 = () => {

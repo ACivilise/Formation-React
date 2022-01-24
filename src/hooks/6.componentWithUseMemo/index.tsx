@@ -1,34 +1,32 @@
 import React, { useMemo, useState } from "react";
-import { Box, Button, Typography } from "@mui/material";
 
 const ComponentWithUseMemo = () => {
-  const firstTilte = "premier titre";
-  const secondTilte = "deuxième titre";
+  const tilte = "titre";
 
-  const [showFirst, setShowFirst] = useState(false);
-  const [showSecond, setShowSecond] = useState(false);
+  const [counter, setCounter] = useState(0);
 
   const color = useMemo(() => {
-    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    return `#${randomColor}`;
-  }, [showFirst, showSecond]);
+    if (counter % 2 === 0) {
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      return `#${randomColor}`;
+    }
+  }, [counter]);
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Typography>{color}</Typography>
-      <Box sx={{ width: "50%" }}>
-        <Button onClick={() => setShowFirst(!showFirst)}>
-          {`${showFirst ? "cacher" : "afficher"} le ${firstTilte}`}
-        </Button>
-        <Button onClick={() => setShowSecond(!showSecond)}>
-          {`${showFirst ? "cacher" : "afficher"} le ${secondTilte}`}
-        </Button>
-      </Box>
-      <Box sx={{ width: "50%", backgroundColor: color }}>
-        {showFirst && <Typography variant="h1">{firstTilte}</Typography>}
-        {showSecond && <Typography variant="h1">{secondTilte}</Typography>}
-      </Box>
-    </Box>
+    <div style={{ width: "100%", backgroundColor: color }}>
+      <div>
+        <h1>{color}</h1>
+        <h2>{counter}</h2>
+      </div>
+      <div style={{ width: "50%" }}>
+        <button onClick={() => setCounter((prev) => prev++)}>
+          {`changer la couleur ${color}`}
+        </button>
+      </div>
+      <div style={{ width: "50%" }}>
+        <h1>{tilte}</h1>
+      </div>
+    </div>
   );
 };
 

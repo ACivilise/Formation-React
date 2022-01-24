@@ -1,28 +1,27 @@
 import React from "react";
-import { Box } from "@mui/material";
 import ComponentWithCondition from "components/2.componentWithCondition";
 
 const ComponentWithMap = () => {
-  const titles = [
+  const texts = [
     {
-      title: "premier titre",
-      big: false,
+      text: "premier titre",
+      isTitle: false,
     },
     {
-      title: "deuxième titre",
-      big: false,
+      text: "deuxième titre",
+      isTitle: false,
     },
     {
-      title: "troisième titre",
-      big: true,
+      text: "troisième titre",
+      isTitle: true,
     },
   ];
   return (
-    <Box>
-      {titles.map(({ title, big }) => (
-        <ComponentWithCondition title={title} big={big} />
+    <div>
+      {texts.map(({ text, isTitle }) => (
+        <ComponentWithCondition text={text} isTitle={isTitle} />
       ))}
-    </Box>
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
 export type MyProps = {
-    title: string;
-    big: boolean;
+    text: string;
+    isTitle: boolean;
 };

@@ -1,3 +1,3 @@
 export type MyProps = {
-    title: string;
+    text: string;
 };

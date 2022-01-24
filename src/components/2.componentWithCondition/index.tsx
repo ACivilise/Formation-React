@@ -1,8 +1,8 @@
 import React from "react";
 import { MyProps } from "./types";
 
-const ComponentWithCondition = ({ title, big }: MyProps) => {
-  return big ? <h1>{title}</h1> : <h3>{title}</h3>;
+const ComponentWithCondition = ({ text, isTitle }: MyProps) => {
+  return isTitle ? <h1>{text}</h1> : <p>{text}</p>;
 };
 
 export default ComponentWithCondition;

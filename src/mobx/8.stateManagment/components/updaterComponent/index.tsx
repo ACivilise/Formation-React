@@ -1,5 +1,4 @@
 import React, { useCallback } from "react";
-import { Button } from "@mui/material";
 import { useStore } from "mobx/8.stateManagment/stores";
 
 const UpdaterComponent = () => {
@@ -11,9 +10,9 @@ const UpdaterComponent = () => {
   }, [updateColor]);
 
   return (
-    <Button
+    <button
       onClick={() => changeColor()}
-    >{`Change la couleur ${color}`}</Button>
+    >{`Change la couleur ${color}`}</button>
   );
 };
 
