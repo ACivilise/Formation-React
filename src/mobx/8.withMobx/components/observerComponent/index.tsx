@@ -1,11 +1,17 @@
-import React from "react";
 import { observer } from "mobx-react";
-import { useStore } from "mobx/8.stateManagment/stores";
+import { useStore } from "mobx/8.withMobx/stores";
+import { flexRow } from "styles";
 
 const ObserverComponent = () => {
   const { color } = useStore();
   return (
-    <div style={{ width: "100%", backgroundColor: color ?? "#fff" }}>
+    <div
+      style={{
+        width: "100%",
+        ...flexRow,
+        backgroundColor: color ?? "#fff",
+      }}
+    >
       <h1>{`la couleur acttuel est ${color ?? "#fff"}`}</h1>
     </div>
   );

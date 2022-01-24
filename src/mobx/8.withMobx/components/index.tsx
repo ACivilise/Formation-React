@@ -1,14 +1,19 @@
-import React from "react";
 import ObserverComponent from "./observerComponent";
 import UpdaterComponent from "./updaterComponent";
 import { createStore, StoreProvider } from "../stores";
+import { flexColumn } from "styles";
 
-const ComponentWithMobx = () => {
+const WithMobx = () => {
   const rootStore = createStore();
 
   return (
-    <div style={{ width: "100%" }}>
-      <h1>Composant fournissant le store</h1>
+    <div
+      style={{
+        width: "100%",
+        ...flexColumn,
+      }}
+    >
+      <h1>Composant dont les enfants utilisent un store</h1>
       <StoreProvider value={rootStore}>
         <ObserverComponent />
         <UpdaterComponent />
@@ -17,4 +22,4 @@ const ComponentWithMobx = () => {
   );
 };
 
-export default ComponentWithMobx;
+export default WithMobx;

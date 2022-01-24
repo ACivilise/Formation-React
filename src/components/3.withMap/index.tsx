@@ -1,7 +1,6 @@
-import React from "react";
-import ComponentWithCondition from "components/2.componentWithCondition";
+import WithCondition from "components/2.withCondition";
 
-const ComponentWithMap = () => {
+const WithMap = () => {
   const texts = [
     {
       text: "premier titre",
@@ -15,14 +14,22 @@ const ComponentWithMap = () => {
       text: "troisième titre",
       isTitle: true,
     },
+    {
+      text: "quatrième titre",
+      isTitle: true,
+    },
+    {
+      text: "etc",
+      isTitle: false,
+    },
   ];
   return (
     <div>
       {texts.map(({ text, isTitle }) => (
-        <ComponentWithCondition text={text} isTitle={isTitle} />
+        <WithCondition text={text} isTitle={isTitle} />
       ))}
     </div>
   );
 };
 
-export default ComponentWithMap;
+export default WithMap;

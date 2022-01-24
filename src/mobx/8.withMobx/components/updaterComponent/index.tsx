@@ -1,5 +1,5 @@
-import React, { useCallback } from "react";
-import { useStore } from "mobx/8.stateManagment/stores";
+import { useCallback } from "react";
+import { useStore } from "mobx/8.withMobx/stores";
 
 const UpdaterComponent = () => {
   const { updateColor, color } = useStore();
