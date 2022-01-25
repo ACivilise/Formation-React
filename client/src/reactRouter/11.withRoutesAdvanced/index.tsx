@@ -1,4 +1,4 @@
-import WithMobx from "mobx/8.withMobx/components";
+import WithMobx from "mobx/9.withMobx/components";
 import WithMap from "components/3.withMap";
 import WithState from "hooks/4.withState";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

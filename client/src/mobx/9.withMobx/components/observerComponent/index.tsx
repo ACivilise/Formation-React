@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { useStore } from "mobx/8.withMobx/stores";
+import { useStore } from "mobx/9.withMobx/stores";
 import { flexRow } from "styles";
 
 const ObserverComponent = () => {

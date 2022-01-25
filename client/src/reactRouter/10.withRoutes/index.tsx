@@ -1,5 +1,3 @@
-import WithMobx from "mobx/8.withMobx/components";
-import WithUseCallBack from "mobx/8.withMobx/components";
 import WithProps from "components/1.withProps";
 import WithCondition from "components/2.withCondition";
 import WithMap from "components/3.withMap";
@@ -16,8 +14,12 @@ import {
   WithUseMemoRoute,
   WithUseCallBackRoute,
   WithMobxRoute,
+  WithDispatchToChildRoute,
 } from "reactRouter/paths";
 import LinksBar from "./linksBar";
+import WithDispatchToChild from "hooks/8.withDispatchToChild";
+import WithUseCallBack from "hooks/7.withUseCallBack";
+import WithMobx from "mobx/9.withMobx/components";
 
 const WithRoutes = () => {
   return (
@@ -44,6 +46,10 @@ const WithRoutes = () => {
             <Route path={WithUseEffectRoute} element={<WithUseEffect />} />
             <Route path={WithUseMemoRoute} element={<WithUseMemo />} />
             <Route path={WithUseCallBackRoute} element={<WithUseCallBack />} />
+            <Route
+              path={WithDispatchToChildRoute}
+              element={<WithDispatchToChild />}
+            />
             <Route path={WithMobxRoute} element={<WithMobx />} />
           </Routes>
         </div>

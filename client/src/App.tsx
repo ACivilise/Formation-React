@@ -1,5 +1,3 @@
-import WithMobx from "mobx/8.withMobx/components";
-import WithUseCallBack from "mobx/8.withMobx/components";
 import "./App.css";
 import WithProps from "components/1.withProps";
 import WithCondition from "components/2.withCondition";
@@ -7,10 +5,14 @@ import WithMap from "components/3.withMap";
 import WithState from "hooks/4.withState";
 import WithUseEffect from "hooks/5.withUseEffect";
 import WithUseMemo from "hooks/6.withUseMemo";
-import WithRoutes from "reactRouter/9.withRoutes";
-import WithRoutesAdvanced from "reactRouter/10.withRoutesAdvanced";
+import WithUseCallBack from "hooks/7.withUseCallBack";
+import WithDispatchToChild from "hooks/8.withDispatchToChild";
+import WithMobx from "mobx/9.withMobx/components";
+import WithRoutes from "reactRouter/10.withRoutes";
+import WithRoutesAdvanced from "reactRouter/11.withRoutesAdvanced";
+import WithAxios from "axios/12.withAxios";
 
-const App = () => {
+const App1 = () => {
   return <WithProps text="titre1" />;
 };
 
@@ -39,15 +41,23 @@ const App7 = () => {
 };
 
 const App8 = () => {
-  return <WithMobx />;
+  return <WithDispatchToChild />;
 };
 
 const App9 = () => {
-  return <WithRoutes />;
+  return <WithMobx />;
 };
 
 const App10 = () => {
+  return <WithRoutes />;
+};
+
+const App11 = () => {
   return <WithRoutesAdvanced />;
+};
+
+const App = () => {
+  return <WithAxios />;
 };
 
 export default App;
