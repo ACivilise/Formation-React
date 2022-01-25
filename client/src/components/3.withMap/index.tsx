@@ -25,8 +25,8 @@ const WithMap = () => {
   ];
   return (
     <div>
-      {texts.map(({ text, isTitle }) => (
-        <WithCondition text={text} isTitle={isTitle} />
+      {texts.map(({ text, isTitle }, index) => (
+        <WithCondition key={index} text={text} isTitle={isTitle} />
       ))}
     </div>
   );

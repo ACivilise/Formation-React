@@ -20,7 +20,7 @@ const phone = complexUser.pro.contact.phone;
 const email = complexUser.pro.contact.email;
 const job = complexUser.pro.job;
 console.log(
-  `firstName : ${firstName} lastName : ${lastName} phone : ${phone} phone : ${phone} email : ${email} job : ${job}`
+  `firstName : ${firstName} lastName : ${lastName} phone : ${phone} email : ${email} job : ${job}`
 );
 
 // 1. Décomposition

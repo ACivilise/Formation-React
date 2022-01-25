@@ -10,7 +10,7 @@ import WithUseMemo from "hooks/6.withUseMemo";
 import WithRoutes from "reactRouter/9.withRoutes";
 import WithRoutesAdvanced from "reactRouter/10.withRoutesAdvanced";
 
-const App1 = () => {
+const App = () => {
   return <WithProps text="titre1" />;
 };
 
@@ -46,7 +46,7 @@ const App9 = () => {
   return <WithRoutes />;
 };
 
-const App = () => {
+const App10 = () => {
   return <WithRoutesAdvanced />;
 };
 
