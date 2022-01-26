@@ -44,7 +44,7 @@ Il est composé de trois dossiers:
 - server : application server [Next.js](https://nextjs.org) utilisé pour l'exemple axios
 - virtualDom : dossier contenant un fichier clock.html démontrant l'utilisation de virtual DOM par React
 
-## 4. Client
+## 4. Client [React](https://beta.reactjs.org/learn)
 
 Pour installer les packages nécessaires au développement du client, utilisez les commandes suivantes `depuis la racine du projet` :
 
@@ -62,7 +62,7 @@ yarn start
 
 Il est accessible sur le `localhost:5200`
 
-## 5. Server
+## 5. Server [Next.js](https://nextjs.org)
 
 Pour installer les packages nécessaires au développement du server, utilisez les commandes suivantes `depuis la racine du projet` :
 
