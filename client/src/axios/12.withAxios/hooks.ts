@@ -6,7 +6,7 @@ import { USERS } from './apiRoutes';
 
 const useData = (
 ): UseDataProps => {
-    const [users, setUsers] = useState<UserDescription[]>([]);
+    const [users, setUsers] = useState<UserDescription[]>();
 
     useEffect(() => {
         axios.get<UserDescription[]>(USERS).then((response) => {

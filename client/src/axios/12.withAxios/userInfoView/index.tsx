@@ -1,8 +1,14 @@
 import { UserInfos } from "axios/models/types";
+import { flexRow } from "styles";
 
 const UserInfoView = ({ firstName, lastName }: UserInfos) => {
   return (
-    <div>
+    <div
+      style={{
+        width: "100%",
+        ...flexRow,
+      }}
+    >
       <h1>{firstName}</h1>
       <h1>{lastName}</h1>
     </div>

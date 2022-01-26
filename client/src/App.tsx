@@ -12,6 +12,7 @@ import WithRoutes from "reactRouter/10.withRoutes";
 import WithRoutesAdvanced from "reactRouter/11.withRoutesAdvanced";
 import WithAxios from "axios/12.withAxios";
 import WithMui from "mui/13.withMui";
+import WithAll from "allExemples/14.withAll";
 
 const App1 = () => {
   return <WithProps text="titre1" />;
@@ -61,8 +62,12 @@ const App12 = () => {
   return <WithAxios />;
 };
 
-const App = () => {
+const App13 = () => {
   return <WithMui />;
 };
 
-export default App;
+const App14 = () => {
+  return <WithAll />;
+};
+
+export default App14;

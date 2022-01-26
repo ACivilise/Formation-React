@@ -6,9 +6,10 @@ const WithAxios = () => {
 
   return (
     <div>
-      {users.map(({ info: { firstName, lastName } }, index) => (
-        <UserInfoView key={index} firstName={firstName} lastName={lastName} />
-      ))}
+      {users &&
+        users.map(({ info: { firstName, lastName } }, index) => (
+          <UserInfoView key={index} firstName={firstName} lastName={lastName} />
+        ))}
     </div>
   );
 };

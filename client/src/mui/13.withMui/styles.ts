@@ -2,7 +2,7 @@ import { SxProps } from "@mui/material";
 import { muiTheme } from "mui/theme";
 
 export const MainBox = {
-    width: '100%',
+    width: '50%',
     paddingTop: '25px',
     [muiTheme.breakpoints.up('md')]: {
         paddingLeft: '20px',

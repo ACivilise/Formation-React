@@ -1,0 +1,17 @@
+[
+  {
+    "info": {
+      "firstName": "Jon",
+      "lastName": "Doe"
+    },
+    "professionalInfos": {
+      "company": "Cypress",
+      "contact": {
+        "email": "acivilise@cypress.fr",
+        "phone": "+33666666"
+      },
+      "job": "Expert",
+      "techs": ["Typescript", "React"]
+    }
+  }
+]

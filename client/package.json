@@ -10,8 +10,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "cypress": "^9.3.1",
     "mobx": "^6.3.13",
+    "mobx-persist-store": "^1.0.4",
     "mobx-react": "^7.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -59,6 +59,7 @@
   },
   "devDependencies": {
     "@types/uuid": "^8.3.4",
+    "cypress": "^9.3.1",
     "prettier": "^2.5.1"
   }
 }

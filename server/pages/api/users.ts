@@ -11,7 +11,6 @@ const cors = initMiddleware(
         // Only allow requests with GET, POST and OPTIONS
         methods: ['GET', 'OPTIONS'],
         origin: ['http://localhost:5200'],
-
     })
 );
 

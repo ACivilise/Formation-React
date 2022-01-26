@@ -8,34 +8,7 @@ export const WithUseMemoRoute = '/withUseMemo';
 export const WithUseCallBackRoute = '/withUseCallBack';
 export const WithDispatchToChildRoute = '/withDispatchToChild';
 export const WithMobxRoute = '/withMobx';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const WithAxiosRoute = '/withAxios';
 
 
 

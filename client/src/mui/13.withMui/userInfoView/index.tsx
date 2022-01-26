@@ -3,7 +3,7 @@ import { UserInfos } from "axios/models/types";
 
 const UserInfoView = ({ firstName, lastName }: UserInfos) => {
   return (
-    <ListItem>
+    <ListItem data-cy="test">
       <ListItemText primary={firstName} secondary={lastName} />
     </ListItem>
   );
