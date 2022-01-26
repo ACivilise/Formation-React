@@ -80,7 +80,7 @@ npx next dev -p 6200
 
 Il est accessible sur le `localhost:6200`
 
-## 6. Cypress
+## 6. [Cypress](https://www.cypress.io/)
 
 Pour utiliser cypress en local, il est nécessaire de lancer l'application client.
 
