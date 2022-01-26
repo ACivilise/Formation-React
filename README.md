@@ -1,22 +1,4 @@
----
-title: Read Me
-date: "2021-12-13T15:00:48.859Z"
-lastmod: "2021-12-13T15:00:48.859Z"
-draft: false
-slug: readme
-author: Alexandre Civilise
-description: Read Me
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-showToc: true
-TocOpen: false
-hidemeta: false
----
+# Formation React
 
 ## 1. Pré-requis
 
