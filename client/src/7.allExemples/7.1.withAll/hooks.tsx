@@ -19,7 +19,7 @@ import {
   WithUseCallBackRoute,
   WithDispatchToChildRoute,
   WithAxiosRoute,
-} from 'reactRouter/paths';
+} from '4.reactRouter/paths';
 import WithUseEffect from '2.hooks/2.2.withUseEffect';
 import WithUseMemo from '2.hooks/2.3.withUseMemo';
 import WithUseCallBack from '2.hooks/2.4.withUseCallBack';
@@ -46,7 +46,7 @@ const useData = (): Datas => {
         },
         {
           key: WithMapRoute,
-          path: WithConditionRoute,
+          path: WithMapRoute,
           element: <WithMap />,
           libelle: `aller vers ${WithMapRoute}`,
         },

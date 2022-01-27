@@ -15,7 +15,7 @@ import {
   WithUseCallBackRoute,
   WithMobxRoute,
   WithDispatchToChildRoute,
-} from 'reactRouter/paths';
+} from '4.reactRouter/paths';
 import LinksBar from './linksBar';
 import WithDispatchToChild from '2.hooks/2.5.withDispatchToChild';
 import WithUseCallBack from '2.hooks/2.4.withUseCallBack';

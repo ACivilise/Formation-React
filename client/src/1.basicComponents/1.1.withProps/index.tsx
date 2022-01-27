@@ -1,7 +1,12 @@
 import { MyProps } from './types';
 
 const WithProps = (props: MyProps) => {
-  return <h1>{props.text}</h1>;
+  return (
+    <div>
+      <h1>WithProps</h1>
+      <h2>{props.text}</h2>
+    </div>
+  );
 };
 
 // you can only have one default export

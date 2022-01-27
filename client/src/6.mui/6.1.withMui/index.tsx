@@ -1,7 +1,7 @@
 import useData from './hooks';
 import UserInfoView from './userInfoView';
 import { ThemeProvider } from '@mui/material/styles';
-import { muiTheme } from 'mui/theme';
+import { muiTheme } from '6.mui/theme';
 import { Button, Box, List, Typography } from '@mui/material';
 import { MainBox } from './styles';
 

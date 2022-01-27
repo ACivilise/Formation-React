@@ -5,7 +5,7 @@ const WithUseEffect = () => {
   const tilte = 'titre';
 
   const [counter, setCounter] = useState(0);
-  const [color, setColor] = useState('#000');
+  const [color, setColor] = useState('#fff');
 
   useEffect(() => {
     // Si counter est pair, on change de couleur

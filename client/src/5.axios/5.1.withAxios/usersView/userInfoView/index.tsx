@@ -1,4 +1,4 @@
-import { UserInfos } from 'axios/models/types';
+import { UserInfos } from '5.axios/models/types';
 import { flexRow } from 'styles';
 
 const UserInfoView = ({ firstName, lastName }: UserInfos) => {

@@ -1,5 +1,5 @@
 import { SxProps } from '@mui/material';
-import { muiTheme } from 'mui/theme';
+import { muiTheme } from '6.mui/theme';
 
 export const MainBox = {
   width: '50%',

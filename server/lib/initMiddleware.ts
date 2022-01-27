@@ -1,4 +1,4 @@
-import { CorsRequest } from 'cors';
+import { CorsRequest } from "cors";
 
 const initMiddleware = (middleware: {
   (
@@ -8,11 +8,11 @@ const initMiddleware = (middleware: {
       setHeader(
         // And to throw an error when an error happens in a middleware
         key: string,
-        value: string,
+        value: string
       ): any;
       end(): any;
     },
-    next: (err?: any) => any,
+    next: (err?: any) => any
   ): void;
   (arg0: any, arg1: any, arg2: (result: any) => void): void;
 }) => {

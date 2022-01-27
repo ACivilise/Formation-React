@@ -8,7 +8,7 @@ import {
   WithUseMemoRoute,
   WithUseCallBackRoute,
   WithMobxRoute,
-} from 'reactRouter/paths';
+} from '4.reactRouter/paths';
 import { flexRow } from 'styles';
 
 const LinksBar = () => {

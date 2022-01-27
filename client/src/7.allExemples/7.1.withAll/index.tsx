@@ -3,7 +3,7 @@ import useData from './hooks';
 import LinksBar from './linksBar';
 import { Box, TextField } from '@mui/material';
 import { NameWithRoutesAdvanced } from './const';
-import { muiTheme } from 'mui/theme';
+import { muiTheme } from '6.mui/theme';
 
 const WithAll = () => {
   const { routes, setCurrentId } = useData();

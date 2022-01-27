@@ -1,4 +1,4 @@
-import { UserDescription } from 'axios/models/types';
+import { UserDescription } from '5.axios/models/types';
 import { useState, useEffect } from 'react';
 import { UseDataProps } from './types';
 import axios from 'axios';

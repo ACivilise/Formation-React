@@ -1,4 +1,4 @@
-import {} from 'axios/models/types';
+import {} from '5.axios/models/types';
 import { useCallback } from 'react';
 import { UseDataProps } from './types';
 import { useNavigate } from 'react-router-dom';

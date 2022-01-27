@@ -1,9 +1,10 @@
+import { useContext } from 'react';
 import { observer } from 'mobx-react';
-import { useStore } from '3.mobx/3.1.withMobx/stores';
+import { StoreContext } from '3.mobx/stores';
 import { flexRow } from 'styles';
 
 const ObserverComponent = () => {
-  const { color } = useStore();
+  const { color } = useContext(StoreContext);
   return (
     <div
       style={{

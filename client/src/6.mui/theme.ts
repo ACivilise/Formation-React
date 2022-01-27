@@ -7,7 +7,7 @@ export const ghostWhite = '#f5f6fa';
 export const pistachio = '#91c36e';
 export const blackColor = 'rgba(0, 0, 0, 0.54)';
 export const orangeRedCrayola = '#FF554B';
-export const pureBlackColor = '#000';
+export const pureBlackColor = '#fff';
 export const pureWhiteColor = '#fff';
 
 export const palette = createPalette({

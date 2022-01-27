@@ -1,7 +1,12 @@
 import { MyProps } from './types';
 
 const WithCondition = ({ text, isTitle }: MyProps) => {
-  return isTitle ? <h1>{text}</h1> : <p>{text}</p>;
+  return (
+    <div>
+      <h1>WithCondition</h1>
+      {isTitle ? <h2>{text}</h2> : <p>{text}</p>}
+    </div>
+  );
 };
 
 export default WithCondition;

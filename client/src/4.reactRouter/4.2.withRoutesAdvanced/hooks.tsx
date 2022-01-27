@@ -1,7 +1,7 @@
 import WithMobx from '3.mobx/3.1.withMobx/components';
 import WithMap from '1.basicComponents/1.3.withMap';
 import WithState from '2.hooks/2.1.withState';
-import { WithMapRoute, WithStateRoute, WithMobxRoute, WithParamsUrlRoute } from 'reactRouter/paths';
+import { WithMapRoute, WithStateRoute, WithMobxRoute, WithParamsUrlRoute } from '4.reactRouter/paths';
 import { useMemo, useState } from 'react';
 import { Datas, LinkRouteType } from './types';
 import WithParamsUrl from './withParamsUrl';

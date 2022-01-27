@@ -1,8 +1,8 @@
-import { useCallback } from 'react';
-import { useStore } from '3.mobx/3.1.withMobx/stores';
+import { useCallback, useContext } from 'react';
+import { StoreContext } from '3.mobx/stores';
 
 const UpdaterComponent = () => {
-  const { updateColor, color } = useStore();
+  const { updateColor, color } = useContext(StoreContext);
 
   const changeColor = useCallback(() => {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);

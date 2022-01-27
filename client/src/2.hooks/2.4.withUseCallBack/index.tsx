@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react';
 
 const WithUseCallBack = () => {
   const tilte = 'titre';
-  const [color, setColor] = useState('#000');
+  const [color, setColor] = useState('#fff');
 
   const changeColor = useCallback(() => {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
