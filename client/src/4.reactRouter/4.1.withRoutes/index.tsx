@@ -19,7 +19,7 @@ import {
 import LinksBar from './linksBar';
 import WithDispatchToChild from '2.hooks/2.5.withDispatchToChild';
 import WithUseCallBack from '2.hooks/2.4.withUseCallBack';
-import WithMobx from '3.mobx/3.1.withMobx/components';
+import WithMobx from '3.mobx/3.1.withMobx';
 
 const WithRoutes = () => {
   return (

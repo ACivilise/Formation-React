@@ -7,7 +7,7 @@ import WithUseEffect from '2.hooks/2.2.withUseEffect';
 import WithUseMemo from '2.hooks/2.3.withUseMemo';
 import WithUseCallBack from '2.hooks/2.4.withUseCallBack';
 import WithDispatchToChild from '2.hooks/2.5.withDispatchToChild';
-import WithMobx from '3.mobx/3.1.withMobx/components';
+import WithMobx from '3.mobx/3.1.withMobx';
 import WithRoutes from '4.reactRouter/4.1.withRoutes';
 import WithRoutesAdvanced from '4.reactRouter/4.2.withRoutesAdvanced';
 import WithAxios from '5.axios/5.1.withAxios';
