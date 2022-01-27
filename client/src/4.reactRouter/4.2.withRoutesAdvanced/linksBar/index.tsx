@@ -1,4 +1,6 @@
+import React from 'react';
 import { useCallback } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import { LinksBarProps } from './types';
 
@@ -19,7 +21,9 @@ const LinksBar = ({ routes }: LinksBarProps) => {
   return (
     <div>
       {routes.map(({ key, path, params, libelle }) => (
-        <button onClick={() => (path ? gotToLink(path, params) : undefined)}>{libelle}</button>
+        <button key={key} onClick={() => (path ? gotToLink(path, params) : undefined)}>
+          {libelle}
+        </button>
       ))}
     </div>
   );

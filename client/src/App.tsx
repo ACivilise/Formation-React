@@ -1,4 +1,6 @@
+import React from 'react';
 import './App.css';
+
 import WithProps from '1.basicComponents/1.1.withProps';
 import WithCondition from '1.basicComponents/1.2.withCondition';
 import WithMap from '1.basicComponents/1.3.withMap';

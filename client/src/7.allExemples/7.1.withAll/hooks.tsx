@@ -1,4 +1,6 @@
+import React from 'react';
 import WithMobx from '3.mobx/3.1.withMobx';
+
 import WithMap from '1.basicComponents/1.3.withMap';
 import WithState from '2.hooks/2.1.withState';
 import { useMemo, useState } from 'react';
@@ -28,6 +30,7 @@ import WithAxios from '5.axios/5.1.withAxios';
 
 const useData = (): Datas => {
   const [currentId, setCurrentId] = useState(uuidv4());
+  debugger;
 
   const routes = useMemo(
     () =>

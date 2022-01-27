@@ -1,4 +1,6 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
+
 import { flexColumn, flexRow } from '../../styles';
 
 const WithUseEffect = () => {
@@ -23,7 +25,7 @@ const WithUseEffect = () => {
         ...flexColumn,
       }}
     >
-      <h1> Composant avec un hook d'effet (useEffect)</h1>
+      <h1>Composant avec un hook d&apos;effet (useEffect)</h1>
       <div
         style={{
           width: '100%',

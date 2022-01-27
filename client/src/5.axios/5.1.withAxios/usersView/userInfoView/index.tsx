@@ -1,7 +1,13 @@
+import React from 'react';
 import { UserInfos } from '5.axios/models/types';
+
 import { flexRow } from 'styles';
 
-const UserInfoView = ({ firstName, lastName }: UserInfos) => {
+type withIndex = {
+  index: number;
+};
+
+const UserInfoView = ({ firstName, lastName, index }: UserInfos & withIndex) => {
   return (
     <div
       style={{
@@ -9,7 +15,7 @@ const UserInfoView = ({ firstName, lastName }: UserInfos) => {
         ...flexRow,
       }}
     >
-      <h1>{firstName}</h1>
+      <h1 data-cy={`test-${index}`}>{firstName}</h1>
       <h1>{lastName}</h1>
     </div>
   );

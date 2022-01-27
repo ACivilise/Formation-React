@@ -10,35 +10,19 @@ import {
   WithUseCallBackRoute,
   WithUseEffectRoute,
   WithUseMemoRoute,
-} from 'src/reactRouter/paths';
+} from 'src/4.reactRouter/paths';
 
 describe('mon premier test', () => {
   it('ceci est un test', () => {
     cy.visit('/');
 
     cy.customGet(NameWithRoutesAdvanced);
-
-    cy.get(`#${WithPropsRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithConditionRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithMapRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithStateRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithUseEffectRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithUseMemoRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithUseCallBackRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithDispatchToChildRoute.replace('/', '')}`).click();
-    cy.wait(500);
-    cy.get(`#${WithMobxRoute.replace('/', '')}`).click();
-    cy.wait(500);
-
-    // cy.customGet(`link-${WithPropsRoute}`).click();
+    const pages = [WithPropsRoute, WithConditionRoute, WithMapRoute, WithStateRoute, WithUseEffectRoute];
+    pages.forEach((page) => {
+      cy.customGet(page.replace('/', '')).click();
+      cy.wait(500);
+    })
   });
 });
 
-export {};
+export { };

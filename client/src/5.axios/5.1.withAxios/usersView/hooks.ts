@@ -1,7 +1,10 @@
+import { UserDescription } from '5.axios/models/types';
 import { useEffect } from 'react';
 
-const useData = (): Record<string, unknown> => {
-  useEffect(() => {}, []);
+const useData = (users: UserDescription[]): Record<string, unknown> => {
+  useEffect(() => {
+    console.log(users);
+  }, [users]);
 
   return {};
 };

@@ -1,3 +1,4 @@
+import React from 'react';
 import { MyProps } from './types';
 
 const WithCondition = ({ text, isTitle }: MyProps) => {

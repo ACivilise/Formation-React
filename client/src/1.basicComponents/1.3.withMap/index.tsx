@@ -1,3 +1,4 @@
+import React from 'react';
 import WithCondition from '1.basicComponents/1.2.withCondition';
 
 const WithMap = () => {

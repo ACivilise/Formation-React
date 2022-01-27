@@ -1,3 +1,4 @@
+import React from 'react';
 import { useContext } from 'react';
 import { observer } from 'mobx-react';
 import { StoreContext } from '3.mobx/stores';

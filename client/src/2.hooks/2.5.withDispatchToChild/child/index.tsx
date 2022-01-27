@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChildProps } from './types';
 
 const Child = ({ color, changeColor }: ChildProps) => {

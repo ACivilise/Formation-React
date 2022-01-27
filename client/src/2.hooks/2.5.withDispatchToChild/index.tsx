@@ -1,3 +1,4 @@
+import React from 'react';
 import { flexColumn, flexRow } from 'styles';
 import Child from './child';
 import useData from './hooks';

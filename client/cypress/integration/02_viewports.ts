@@ -9,7 +9,7 @@ import {
   WithUseCallBackRoute,
   WithDispatchToChildRoute,
   WithMobxRoute,
-} from 'src/reactRouter/paths';
+} from 'src/4.reactRouter/paths';
 
 describe('mon premier test', () => {
   it("ceci est un test où on change de taille d'écran", () => {
@@ -40,4 +40,4 @@ describe('mon premier test', () => {
   });
 });
 
-export {};
+export { };

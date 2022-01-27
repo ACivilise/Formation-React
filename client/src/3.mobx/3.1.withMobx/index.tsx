@@ -1,4 +1,6 @@
+import React from 'react';
 import ObserverComponent from './observerComponent';
+
 import UpdaterComponent from './updaterComponent';
 import { createStore, StoreProvider } from '../stores';
 import { flexColumn } from 'styles';

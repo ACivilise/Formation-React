@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import WithCondition from '1.basicComponents/1.2.withCondition';
 
@@ -12,7 +13,7 @@ const WithState = () => {
         flexDirection: 'column',
       }}
     >
-      <h1> Composant avec un hook d'état (useState)</h1>
+      <h1> Composant avec un hook d&apos;état (useState)</h1>
       <button onClick={() => setIsTitle((prev) => !prev)}>modifier la taille du titre</button>
       <WithCondition text="WithState" isTitle={isTitle} />
     </div>

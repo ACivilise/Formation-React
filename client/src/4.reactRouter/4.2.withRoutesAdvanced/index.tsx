@@ -1,4 +1,6 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import useData from './hooks';
 import LinksBar from './linksBar';
 
@@ -9,7 +11,7 @@ const WithRoutesAdvanced = () => {
       <BrowserRouter>
         <input onChange={(event) => setCurrentId(event.target.value)}></input>
         <LinksBar routes={routes} />
-        <div data-cy="c'est ici que les composants associés aux routes seront rendered">
+        <div data-info="c'est ici que les composants associés aux routes seront rendered">
           <Routes>
             {routes.map(({ key, path, element }) => (
               <Route key={key} path={path} element={element} />

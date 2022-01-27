@@ -1,3 +1,4 @@
+import React from 'react';
 import WithProps from '1.basicComponents/1.1.withProps';
 import WithCondition from '1.basicComponents/1.2.withCondition';
 import WithMap from '1.basicComponents/1.3.withMap';
@@ -26,7 +27,7 @@ const WithRoutes = () => {
     <div>
       <BrowserRouter>
         <LinksBar />
-        <div data-cy="c'est ici que les composants associés aux routes seront rendered">
+        <div data-info="c'est ici que les composants associés aux routes seront rendered">
           <Routes>
             <Route path={WithPropsRoute} element={<WithProps text={`ma route est ${WithPropsRoute}`} />} />
             <Route
