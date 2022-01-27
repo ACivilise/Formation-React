@@ -90,3 +90,11 @@ Ensuite il faut utiliser la commande suivante pour lancer Cypress en mode `headf
 cd client
 yarn cypress open
 ```
+
+## Autres commandes
+
+Pour utiliser prettier :
+
+```bash
+npx prettier --write .
+```

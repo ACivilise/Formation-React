@@ -1,18 +1,18 @@
-import "./App.css";
-import WithProps from "components/1.withProps";
-import WithCondition from "components/2.withCondition";
-import WithMap from "components/3.withMap";
-import WithState from "hooks/4.withState";
-import WithUseEffect from "hooks/5.withUseEffect";
-import WithUseMemo from "hooks/6.withUseMemo";
-import WithUseCallBack from "hooks/7.withUseCallBack";
-import WithDispatchToChild from "hooks/8.withDispatchToChild";
-import WithMobx from "mobx/9.withMobx/components";
-import WithRoutes from "reactRouter/10.withRoutes";
-import WithRoutesAdvanced from "reactRouter/11.withRoutesAdvanced";
-import WithAxios from "axios/12.withAxios";
-import WithMui from "mui/13.withMui";
-import WithAll from "allExemples/14.withAll";
+import './App.css';
+import WithProps from '1.basicComponents/1.1.withProps';
+import WithCondition from '1.basicComponents/1.2.withCondition';
+import WithMap from '1.basicComponents/1.3.withMap';
+import WithState from '2.hooks/2.1.withState';
+import WithUseEffect from '2.hooks/2.2.withUseEffect';
+import WithUseMemo from '2.hooks/2.3.withUseMemo';
+import WithUseCallBack from '2.hooks/2.4.withUseCallBack';
+import WithDispatchToChild from '2.hooks/2.5.withDispatchToChild';
+import WithMobx from '3.mobx/3.1.withMobx/components';
+import WithRoutes from '4.reactRouter/4.1.withRoutes';
+import WithRoutesAdvanced from '4.reactRouter/4.2.withRoutesAdvanced';
+import WithAxios from '5.axios/5.1.withAxios';
+import WithMui from '6.mui/6.1.withMui';
+import WithAll from '7.allExemples/7.1.withAll';
 
 const App1 = () => {
   return <WithProps text="titre1" />;

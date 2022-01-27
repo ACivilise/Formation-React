@@ -1,9 +1,18 @@
-import { NameWithRoutesAdvanced } from "src/allExemples/14.withAll/const"
-import { WithAxiosRoute, WithConditionRoute, WithDispatchToChildRoute, WithMapRoute, WithMobxRoute, WithPropsRoute, WithStateRoute, WithUseCallBackRoute, WithUseEffectRoute, WithUseMemoRoute } from "src/reactRouter/paths"
-
+import { NameWithRoutesAdvanced } from 'src/7.allExemples/7.1.withAll/const';
+import {
+  WithAxiosRoute,
+  WithConditionRoute,
+  WithDispatchToChildRoute,
+  WithMapRoute,
+  WithMobxRoute,
+  WithPropsRoute,
+  WithStateRoute,
+  WithUseCallBackRoute,
+  WithUseEffectRoute,
+  WithUseMemoRoute,
+} from 'src/reactRouter/paths';
 
 describe('mon premier test', () => {
-
   it('ceci est un test', () => {
     cy.visit('/');
 
@@ -28,11 +37,8 @@ describe('mon premier test', () => {
     cy.get(`#${WithMobxRoute.replace('/', '')}`).click();
     cy.wait(500);
 
-
     // cy.customGet(`link-${WithPropsRoute}`).click();
-
-
   });
 });
 
-export { };
+export {};

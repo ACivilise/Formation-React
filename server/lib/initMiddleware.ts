@@ -1,20 +1,29 @@
-import { CorsRequest } from "cors"
+import { CorsRequest } from 'cors';
 
 const initMiddleware = (middleware: {
-  (req: CorsRequest, res: {
-    statusCode?: number | undefined; setHeader(
-      // And to throw an error when an error happens in a middleware
-      key: string, value: string): any; end(): any
-  }, next: (err?: any) => any): void; (arg0: any, arg1: any, arg2: (result: any) => void): void
+  (
+    req: CorsRequest,
+    res: {
+      statusCode?: number | undefined;
+      setHeader(
+        // And to throw an error when an error happens in a middleware
+        key: string,
+        value: string,
+      ): any;
+      end(): any;
+    },
+    next: (err?: any) => any,
+  ): void;
+  (arg0: any, arg1: any, arg2: (result: any) => void): void;
 }) => {
   return (req: any, res: any) =>
     new Promise((resolve, reject) => {
       middleware(req, res, (result: unknown) => {
         if (result instanceof Error) {
-          return reject(result)
+          return reject(result);
         }
-        return resolve(result)
-      })
-    })
-}
+        return resolve(result);
+      });
+    });
+};
 export default initMiddleware;

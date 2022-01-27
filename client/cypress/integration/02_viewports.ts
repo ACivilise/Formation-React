@@ -1,10 +1,18 @@
-import { NameWithRoutesAdvanced } from "src/allExemples/14.withAll/const";
-import { WithPropsRoute, WithConditionRoute, WithMapRoute, WithStateRoute, WithUseEffectRoute, WithUseMemoRoute, WithUseCallBackRoute, WithDispatchToChildRoute, WithMobxRoute } from "src/reactRouter/paths";
-
+import { NameWithRoutesAdvanced } from 'src/7.allExemples/7.1.withAll/const';
+import {
+  WithPropsRoute,
+  WithConditionRoute,
+  WithMapRoute,
+  WithStateRoute,
+  WithUseEffectRoute,
+  WithUseMemoRoute,
+  WithUseCallBackRoute,
+  WithDispatchToChildRoute,
+  WithMobxRoute,
+} from 'src/reactRouter/paths';
 
 describe('mon premier test', () => {
-
-  it('ceci est un test où on change de taille d\'écran', () => {
+  it("ceci est un test où on change de taille d'écran", () => {
     cy.viewport('iphone-6');
     cy.visit('/');
     cy.customGet(NameWithRoutesAdvanced);
@@ -32,4 +40,4 @@ describe('mon premier test', () => {
   });
 });
 
-export { };
+export {};

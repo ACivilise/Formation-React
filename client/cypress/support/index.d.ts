@@ -6,6 +6,5 @@ declare namespace Cypress {
      * @example cy.customGet('greeting')
      */
     customGet(value: string): Chainable<Element>;
-
   }
 }
