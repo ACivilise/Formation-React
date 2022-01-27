@@ -98,3 +98,9 @@ Pour utiliser prettier :
 ```bash
 npx prettier --write .
 ```
+
+Pour utiliser eslint :
+
+```bash
+yarn lint --fix
+```
